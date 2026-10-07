@@ -12,4 +12,3 @@ __pycache__/
 .streamlit/secrets.toml
 
 models/classification/baseline/random_forest.pkl
-models/classification/tuned/random_forest.pkl
