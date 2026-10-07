@@ -1,0 +1,769 @@
+Month,Brand,Category,Units
+2024-01-01,Amul,Beverages,407
+2024-01-01,Amul,Dairy,346
+2024-01-01,Amul,Fruits,379
+2024-01-01,Amul,Grocery,440
+2024-01-01,Amul,Home Care,400
+2024-01-01,Amul,Personal Care,337
+2024-01-01,Amul,Snacks,385
+2024-01-01,Amul,Vegetables,393
+2024-01-01,Britannia,Beverages,364
+2024-01-01,Britannia,Dairy,393
+2024-01-01,Britannia,Fruits,408
+2024-01-01,Britannia,Grocery,407
+2024-01-01,Britannia,Home Care,407
+2024-01-01,Britannia,Personal Care,382
+2024-01-01,Britannia,Snacks,365
+2024-01-01,Britannia,Vegetables,450
+2024-01-01,HUL,Beverages,467
+2024-01-01,HUL,Dairy,321
+2024-01-01,HUL,Fruits,369
+2024-01-01,HUL,Grocery,380
+2024-01-01,HUL,Home Care,380
+2024-01-01,HUL,Personal Care,371
+2024-01-01,HUL,Snacks,374
+2024-01-01,HUL,Vegetables,400
+2024-01-01,ITC,Beverages,417
+2024-01-01,ITC,Dairy,482
+2024-01-01,ITC,Fruits,414
+2024-01-01,ITC,Grocery,437
+2024-01-01,ITC,Home Care,493
+2024-01-01,ITC,Personal Care,380
+2024-01-01,ITC,Snacks,463
+2024-01-01,ITC,Vegetables,339
+2024-01-01,Nestle,Beverages,426
+2024-01-01,Nestle,Dairy,455
+2024-01-01,Nestle,Fruits,428
+2024-01-01,Nestle,Grocery,323
+2024-01-01,Nestle,Home Care,393
+2024-01-01,Nestle,Personal Care,344
+2024-01-01,Nestle,Snacks,359
+2024-01-01,Nestle,Vegetables,383
+2024-01-01,Parle,Beverages,416
+2024-01-01,Parle,Dairy,438
+2024-01-01,Parle,Fruits,406
+2024-01-01,Parle,Grocery,490
+2024-01-01,Parle,Home Care,371
+2024-01-01,Parle,Personal Care,394
+2024-01-01,Parle,Snacks,408
+2024-01-01,Parle,Vegetables,400
+2024-01-01,PepsiCo,Beverages,335
+2024-01-01,PepsiCo,Dairy,451
+2024-01-01,PepsiCo,Fruits,433
+2024-01-01,PepsiCo,Grocery,420
+2024-01-01,PepsiCo,Home Care,399
+2024-01-01,PepsiCo,Personal Care,444
+2024-01-01,PepsiCo,Snacks,418
+2024-01-01,PepsiCo,Vegetables,382
+2024-01-01,Tata,Beverages,414
+2024-01-01,Tata,Dairy,392
+2024-01-01,Tata,Fruits,354
+2024-01-01,Tata,Grocery,441
+2024-01-01,Tata,Home Care,395
+2024-01-01,Tata,Personal Care,433
+2024-01-01,Tata,Snacks,387
+2024-01-01,Tata,Vegetables,424
+2024-02-01,Amul,Beverages,416
+2024-02-01,Amul,Dairy,294
+2024-02-01,Amul,Fruits,336
+2024-02-01,Amul,Grocery,389
+2024-02-01,Amul,Home Care,377
+2024-02-01,Amul,Personal Care,415
+2024-02-01,Amul,Snacks,355
+2024-02-01,Amul,Vegetables,374
+2024-02-01,Britannia,Beverages,399
+2024-02-01,Britannia,Dairy,420
+2024-02-01,Britannia,Fruits,398
+2024-02-01,Britannia,Grocery,363
+2024-02-01,Britannia,Home Care,356
+2024-02-01,Britannia,Personal Care,325
+2024-02-01,Britannia,Snacks,310
+2024-02-01,Britannia,Vegetables,415
+2024-02-01,HUL,Beverages,403
+2024-02-01,HUL,Dairy,358
+2024-02-01,HUL,Fruits,403
+2024-02-01,HUL,Grocery,398
+2024-02-01,HUL,Home Care,300
+2024-02-01,HUL,Personal Care,366
+2024-02-01,HUL,Snacks,414
+2024-02-01,HUL,Vegetables,353
+2024-02-01,ITC,Beverages,374
+2024-02-01,ITC,Dairy,281
+2024-02-01,ITC,Fruits,365
+2024-02-01,ITC,Grocery,376
+2024-02-01,ITC,Home Care,358
+2024-02-01,ITC,Personal Care,372
+2024-02-01,ITC,Snacks,359
+2024-02-01,ITC,Vegetables,380
+2024-02-01,Nestle,Beverages,371
+2024-02-01,Nestle,Dairy,401
+2024-02-01,Nestle,Fruits,332
+2024-02-01,Nestle,Grocery,381
+2024-02-01,Nestle,Home Care,465
+2024-02-01,Nestle,Personal Care,379
+2024-02-01,Nestle,Snacks,358
+2024-02-01,Nestle,Vegetables,364
+2024-02-01,Parle,Beverages,381
+2024-02-01,Parle,Dairy,442
+2024-02-01,Parle,Fruits,382
+2024-02-01,Parle,Grocery,359
+2024-02-01,Parle,Home Care,319
+2024-02-01,Parle,Personal Care,429
+2024-02-01,Parle,Snacks,347
+2024-02-01,Parle,Vegetables,336
+2024-02-01,PepsiCo,Beverages,374
+2024-02-01,PepsiCo,Dairy,354
+2024-02-01,PepsiCo,Fruits,312
+2024-02-01,PepsiCo,Grocery,346
+2024-02-01,PepsiCo,Home Care,395
+2024-02-01,PepsiCo,Personal Care,323
+2024-02-01,PepsiCo,Snacks,465
+2024-02-01,PepsiCo,Vegetables,366
+2024-02-01,Tata,Beverages,369
+2024-02-01,Tata,Dairy,310
+2024-02-01,Tata,Fruits,389
+2024-02-01,Tata,Grocery,393
+2024-02-01,Tata,Home Care,306
+2024-02-01,Tata,Personal Care,360
+2024-02-01,Tata,Snacks,399
+2024-02-01,Tata,Vegetables,377
+2024-03-01,Amul,Beverages,398
+2024-03-01,Amul,Dairy,448
+2024-03-01,Amul,Fruits,309
+2024-03-01,Amul,Grocery,409
+2024-03-01,Amul,Home Care,366
+2024-03-01,Amul,Personal Care,405
+2024-03-01,Amul,Snacks,396
+2024-03-01,Amul,Vegetables,424
+2024-03-01,Britannia,Beverages,399
+2024-03-01,Britannia,Dairy,388
+2024-03-01,Britannia,Fruits,404
+2024-03-01,Britannia,Grocery,425
+2024-03-01,Britannia,Home Care,362
+2024-03-01,Britannia,Personal Care,327
+2024-03-01,Britannia,Snacks,375
+2024-03-01,Britannia,Vegetables,408
+2024-03-01,HUL,Beverages,479
+2024-03-01,HUL,Dairy,335
+2024-03-01,HUL,Fruits,421
+2024-03-01,HUL,Grocery,493
+2024-03-01,HUL,Home Care,451
+2024-03-01,HUL,Personal Care,450
+2024-03-01,HUL,Snacks,437
+2024-03-01,HUL,Vegetables,394
+2024-03-01,ITC,Beverages,426
+2024-03-01,ITC,Dairy,410
+2024-03-01,ITC,Fruits,385
+2024-03-01,ITC,Grocery,373
+2024-03-01,ITC,Home Care,310
+2024-03-01,ITC,Personal Care,345
+2024-03-01,ITC,Snacks,453
+2024-03-01,ITC,Vegetables,451
+2024-03-01,Nestle,Beverages,359
+2024-03-01,Nestle,Dairy,401
+2024-03-01,Nestle,Fruits,364
+2024-03-01,Nestle,Grocery,444
+2024-03-01,Nestle,Home Care,429
+2024-03-01,Nestle,Personal Care,358
+2024-03-01,Nestle,Snacks,479
+2024-03-01,Nestle,Vegetables,441
+2024-03-01,Parle,Beverages,394
+2024-03-01,Parle,Dairy,360
+2024-03-01,Parle,Fruits,423
+2024-03-01,Parle,Grocery,345
+2024-03-01,Parle,Home Care,416
+2024-03-01,Parle,Personal Care,350
+2024-03-01,Parle,Snacks,398
+2024-03-01,Parle,Vegetables,391
+2024-03-01,PepsiCo,Beverages,390
+2024-03-01,PepsiCo,Dairy,435
+2024-03-01,PepsiCo,Fruits,459
+2024-03-01,PepsiCo,Grocery,367
+2024-03-01,PepsiCo,Home Care,382
+2024-03-01,PepsiCo,Personal Care,371
+2024-03-01,PepsiCo,Snacks,374
+2024-03-01,PepsiCo,Vegetables,456
+2024-03-01,Tata,Beverages,379
+2024-03-01,Tata,Dairy,402
+2024-03-01,Tata,Fruits,425
+2024-03-01,Tata,Grocery,358
+2024-03-01,Tata,Home Care,364
+2024-03-01,Tata,Personal Care,382
+2024-03-01,Tata,Snacks,406
+2024-03-01,Tata,Vegetables,331
+2024-04-01,Amul,Beverages,390
+2024-04-01,Amul,Dairy,437
+2024-04-01,Amul,Fruits,292
+2024-04-01,Amul,Grocery,413
+2024-04-01,Amul,Home Care,426
+2024-04-01,Amul,Personal Care,405
+2024-04-01,Amul,Snacks,349
+2024-04-01,Amul,Vegetables,309
+2024-04-01,Britannia,Beverages,441
+2024-04-01,Britannia,Dairy,418
+2024-04-01,Britannia,Fruits,478
+2024-04-01,Britannia,Grocery,440
+2024-04-01,Britannia,Home Care,381
+2024-04-01,Britannia,Personal Care,383
+2024-04-01,Britannia,Snacks,353
+2024-04-01,Britannia,Vegetables,380
+2024-04-01,HUL,Beverages,370
+2024-04-01,HUL,Dairy,409
+2024-04-01,HUL,Fruits,454
+2024-04-01,HUL,Grocery,425
+2024-04-01,HUL,Home Care,389
+2024-04-01,HUL,Personal Care,370
+2024-04-01,HUL,Snacks,402
+2024-04-01,HUL,Vegetables,374
+2024-04-01,ITC,Beverages,350
+2024-04-01,ITC,Dairy,398
+2024-04-01,ITC,Fruits,403
+2024-04-01,ITC,Grocery,344
+2024-04-01,ITC,Home Care,370
+2024-04-01,ITC,Personal Care,316
+2024-04-01,ITC,Snacks,429
+2024-04-01,ITC,Vegetables,440
+2024-04-01,Nestle,Beverages,397
+2024-04-01,Nestle,Dairy,361
+2024-04-01,Nestle,Fruits,395
+2024-04-01,Nestle,Grocery,357
+2024-04-01,Nestle,Home Care,420
+2024-04-01,Nestle,Personal Care,369
+2024-04-01,Nestle,Snacks,383
+2024-04-01,Nestle,Vegetables,424
+2024-04-01,Parle,Beverages,430
+2024-04-01,Parle,Dairy,367
+2024-04-01,Parle,Fruits,397
+2024-04-01,Parle,Grocery,419
+2024-04-01,Parle,Home Care,385
+2024-04-01,Parle,Personal Care,344
+2024-04-01,Parle,Snacks,315
+2024-04-01,Parle,Vegetables,383
+2024-04-01,PepsiCo,Beverages,415
+2024-04-01,PepsiCo,Dairy,349
+2024-04-01,PepsiCo,Fruits,387
+2024-04-01,PepsiCo,Grocery,362
+2024-04-01,PepsiCo,Home Care,405
+2024-04-01,PepsiCo,Personal Care,341
+2024-04-01,PepsiCo,Snacks,397
+2024-04-01,PepsiCo,Vegetables,437
+2024-04-01,Tata,Beverages,446
+2024-04-01,Tata,Dairy,368
+2024-04-01,Tata,Fruits,441
+2024-04-01,Tata,Grocery,358
+2024-04-01,Tata,Home Care,348
+2024-04-01,Tata,Personal Care,325
+2024-04-01,Tata,Snacks,414
+2024-04-01,Tata,Vegetables,407
+2024-05-01,Amul,Beverages,413
+2024-05-01,Amul,Dairy,360
+2024-05-01,Amul,Fruits,398
+2024-05-01,Amul,Grocery,434
+2024-05-01,Amul,Home Care,403
+2024-05-01,Amul,Personal Care,405
+2024-05-01,Amul,Snacks,451
+2024-05-01,Amul,Vegetables,369
+2024-05-01,Britannia,Beverages,403
+2024-05-01,Britannia,Dairy,399
+2024-05-01,Britannia,Fruits,374
+2024-05-01,Britannia,Grocery,401
+2024-05-01,Britannia,Home Care,369
+2024-05-01,Britannia,Personal Care,392
+2024-05-01,Britannia,Snacks,371
+2024-05-01,Britannia,Vegetables,373
+2024-05-01,HUL,Beverages,406
+2024-05-01,HUL,Dairy,409
+2024-05-01,HUL,Fruits,367
+2024-05-01,HUL,Grocery,377
+2024-05-01,HUL,Home Care,455
+2024-05-01,HUL,Personal Care,466
+2024-05-01,HUL,Snacks,377
+2024-05-01,HUL,Vegetables,356
+2024-05-01,ITC,Beverages,435
+2024-05-01,ITC,Dairy,409
+2024-05-01,ITC,Fruits,415
+2024-05-01,ITC,Grocery,438
+2024-05-01,ITC,Home Care,373
+2024-05-01,ITC,Personal Care,348
+2024-05-01,ITC,Snacks,424
+2024-05-01,ITC,Vegetables,353
+2024-05-01,Nestle,Beverages,421
+2024-05-01,Nestle,Dairy,409
+2024-05-01,Nestle,Fruits,377
+2024-05-01,Nestle,Grocery,369
+2024-05-01,Nestle,Home Care,368
+2024-05-01,Nestle,Personal Care,430
+2024-05-01,Nestle,Snacks,444
+2024-05-01,Nestle,Vegetables,506
+2024-05-01,Parle,Beverages,387
+2024-05-01,Parle,Dairy,401
+2024-05-01,Parle,Fruits,416
+2024-05-01,Parle,Grocery,410
+2024-05-01,Parle,Home Care,357
+2024-05-01,Parle,Personal Care,418
+2024-05-01,Parle,Snacks,371
+2024-05-01,Parle,Vegetables,404
+2024-05-01,PepsiCo,Beverages,377
+2024-05-01,PepsiCo,Dairy,360
+2024-05-01,PepsiCo,Fruits,374
+2024-05-01,PepsiCo,Grocery,403
+2024-05-01,PepsiCo,Home Care,383
+2024-05-01,PepsiCo,Personal Care,377
+2024-05-01,PepsiCo,Snacks,406
+2024-05-01,PepsiCo,Vegetables,366
+2024-05-01,Tata,Beverages,377
+2024-05-01,Tata,Dairy,350
+2024-05-01,Tata,Fruits,382
+2024-05-01,Tata,Grocery,339
+2024-05-01,Tata,Home Care,407
+2024-05-01,Tata,Personal Care,432
+2024-05-01,Tata,Snacks,376
+2024-05-01,Tata,Vegetables,409
+2024-06-01,Amul,Beverages,434
+2024-06-01,Amul,Dairy,310
+2024-06-01,Amul,Fruits,423
+2024-06-01,Amul,Grocery,398
+2024-06-01,Amul,Home Care,422
+2024-06-01,Amul,Personal Care,403
+2024-06-01,Amul,Snacks,378
+2024-06-01,Amul,Vegetables,351
+2024-06-01,Britannia,Beverages,366
+2024-06-01,Britannia,Dairy,339
+2024-06-01,Britannia,Fruits,355
+2024-06-01,Britannia,Grocery,362
+2024-06-01,Britannia,Home Care,367
+2024-06-01,Britannia,Personal Care,449
+2024-06-01,Britannia,Snacks,345
+2024-06-01,Britannia,Vegetables,326
+2024-06-01,HUL,Beverages,373
+2024-06-01,HUL,Dairy,363
+2024-06-01,HUL,Fruits,437
+2024-06-01,HUL,Grocery,356
+2024-06-01,HUL,Home Care,381
+2024-06-01,HUL,Personal Care,349
+2024-06-01,HUL,Snacks,368
+2024-06-01,HUL,Vegetables,455
+2024-06-01,ITC,Beverages,388
+2024-06-01,ITC,Dairy,336
+2024-06-01,ITC,Fruits,366
+2024-06-01,ITC,Grocery,395
+2024-06-01,ITC,Home Care,458
+2024-06-01,ITC,Personal Care,457
+2024-06-01,ITC,Snacks,350
+2024-06-01,ITC,Vegetables,467
+2024-06-01,Nestle,Beverages,302
+2024-06-01,Nestle,Dairy,333
+2024-06-01,Nestle,Fruits,398
+2024-06-01,Nestle,Grocery,409
+2024-06-01,Nestle,Home Care,351
+2024-06-01,Nestle,Personal Care,477
+2024-06-01,Nestle,Snacks,414
+2024-06-01,Nestle,Vegetables,321
+2024-06-01,Parle,Beverages,378
+2024-06-01,Parle,Dairy,330
+2024-06-01,Parle,Fruits,384
+2024-06-01,Parle,Grocery,329
+2024-06-01,Parle,Home Care,342
+2024-06-01,Parle,Personal Care,380
+2024-06-01,Parle,Snacks,347
+2024-06-01,Parle,Vegetables,416
+2024-06-01,PepsiCo,Beverages,350
+2024-06-01,PepsiCo,Dairy,319
+2024-06-01,PepsiCo,Fruits,400
+2024-06-01,PepsiCo,Grocery,332
+2024-06-01,PepsiCo,Home Care,333
+2024-06-01,PepsiCo,Personal Care,370
+2024-06-01,PepsiCo,Snacks,369
+2024-06-01,PepsiCo,Vegetables,346
+2024-06-01,Tata,Beverages,345
+2024-06-01,Tata,Dairy,339
+2024-06-01,Tata,Fruits,453
+2024-06-01,Tata,Grocery,337
+2024-06-01,Tata,Home Care,425
+2024-06-01,Tata,Personal Care,405
+2024-06-01,Tata,Snacks,385
+2024-06-01,Tata,Vegetables,425
+2024-07-01,Amul,Beverages,420
+2024-07-01,Amul,Dairy,363
+2024-07-01,Amul,Fruits,390
+2024-07-01,Amul,Grocery,387
+2024-07-01,Amul,Home Care,452
+2024-07-01,Amul,Personal Care,419
+2024-07-01,Amul,Snacks,399
+2024-07-01,Amul,Vegetables,398
+2024-07-01,Britannia,Beverages,355
+2024-07-01,Britannia,Dairy,430
+2024-07-01,Britannia,Fruits,375
+2024-07-01,Britannia,Grocery,376
+2024-07-01,Britannia,Home Care,441
+2024-07-01,Britannia,Personal Care,345
+2024-07-01,Britannia,Snacks,355
+2024-07-01,Britannia,Vegetables,396
+2024-07-01,HUL,Beverages,367
+2024-07-01,HUL,Dairy,431
+2024-07-01,HUL,Fruits,469
+2024-07-01,HUL,Grocery,320
+2024-07-01,HUL,Home Care,419
+2024-07-01,HUL,Personal Care,436
+2024-07-01,HUL,Snacks,402
+2024-07-01,HUL,Vegetables,340
+2024-07-01,ITC,Beverages,490
+2024-07-01,ITC,Dairy,382
+2024-07-01,ITC,Fruits,470
+2024-07-01,ITC,Grocery,373
+2024-07-01,ITC,Home Care,437
+2024-07-01,ITC,Personal Care,449
+2024-07-01,ITC,Snacks,368
+2024-07-01,ITC,Vegetables,458
+2024-07-01,Nestle,Beverages,434
+2024-07-01,Nestle,Dairy,365
+2024-07-01,Nestle,Fruits,440
+2024-07-01,Nestle,Grocery,390
+2024-07-01,Nestle,Home Care,427
+2024-07-01,Nestle,Personal Care,371
+2024-07-01,Nestle,Snacks,435
+2024-07-01,Nestle,Vegetables,387
+2024-07-01,Parle,Beverages,341
+2024-07-01,Parle,Dairy,356
+2024-07-01,Parle,Fruits,381
+2024-07-01,Parle,Grocery,424
+2024-07-01,Parle,Home Care,376
+2024-07-01,Parle,Personal Care,417
+2024-07-01,Parle,Snacks,337
+2024-07-01,Parle,Vegetables,358
+2024-07-01,PepsiCo,Beverages,371
+2024-07-01,PepsiCo,Dairy,406
+2024-07-01,PepsiCo,Fruits,431
+2024-07-01,PepsiCo,Grocery,406
+2024-07-01,PepsiCo,Home Care,383
+2024-07-01,PepsiCo,Personal Care,381
+2024-07-01,PepsiCo,Snacks,403
+2024-07-01,PepsiCo,Vegetables,437
+2024-07-01,Tata,Beverages,371
+2024-07-01,Tata,Dairy,395
+2024-07-01,Tata,Fruits,470
+2024-07-01,Tata,Grocery,393
+2024-07-01,Tata,Home Care,360
+2024-07-01,Tata,Personal Care,363
+2024-07-01,Tata,Snacks,386
+2024-07-01,Tata,Vegetables,342
+2024-08-01,Amul,Beverages,437
+2024-08-01,Amul,Dairy,460
+2024-08-01,Amul,Fruits,387
+2024-08-01,Amul,Grocery,397
+2024-08-01,Amul,Home Care,427
+2024-08-01,Amul,Personal Care,434
+2024-08-01,Amul,Snacks,414
+2024-08-01,Amul,Vegetables,421
+2024-08-01,Britannia,Beverages,355
+2024-08-01,Britannia,Dairy,364
+2024-08-01,Britannia,Fruits,457
+2024-08-01,Britannia,Grocery,459
+2024-08-01,Britannia,Home Care,411
+2024-08-01,Britannia,Personal Care,394
+2024-08-01,Britannia,Snacks,421
+2024-08-01,Britannia,Vegetables,416
+2024-08-01,HUL,Beverages,324
+2024-08-01,HUL,Dairy,438
+2024-08-01,HUL,Fruits,384
+2024-08-01,HUL,Grocery,424
+2024-08-01,HUL,Home Care,402
+2024-08-01,HUL,Personal Care,356
+2024-08-01,HUL,Snacks,462
+2024-08-01,HUL,Vegetables,324
+2024-08-01,ITC,Beverages,380
+2024-08-01,ITC,Dairy,443
+2024-08-01,ITC,Fruits,476
+2024-08-01,ITC,Grocery,495
+2024-08-01,ITC,Home Care,404
+2024-08-01,ITC,Personal Care,336
+2024-08-01,ITC,Snacks,451
+2024-08-01,ITC,Vegetables,385
+2024-08-01,Nestle,Beverages,451
+2024-08-01,Nestle,Dairy,381
+2024-08-01,Nestle,Fruits,362
+2024-08-01,Nestle,Grocery,435
+2024-08-01,Nestle,Home Care,344
+2024-08-01,Nestle,Personal Care,398
+2024-08-01,Nestle,Snacks,367
+2024-08-01,Nestle,Vegetables,402
+2024-08-01,Parle,Beverages,404
+2024-08-01,Parle,Dairy,319
+2024-08-01,Parle,Fruits,416
+2024-08-01,Parle,Grocery,379
+2024-08-01,Parle,Home Care,439
+2024-08-01,Parle,Personal Care,380
+2024-08-01,Parle,Snacks,388
+2024-08-01,Parle,Vegetables,399
+2024-08-01,PepsiCo,Beverages,388
+2024-08-01,PepsiCo,Dairy,374
+2024-08-01,PepsiCo,Fruits,351
+2024-08-01,PepsiCo,Grocery,401
+2024-08-01,PepsiCo,Home Care,417
+2024-08-01,PepsiCo,Personal Care,304
+2024-08-01,PepsiCo,Snacks,399
+2024-08-01,PepsiCo,Vegetables,328
+2024-08-01,Tata,Beverages,407
+2024-08-01,Tata,Dairy,376
+2024-08-01,Tata,Fruits,332
+2024-08-01,Tata,Grocery,432
+2024-08-01,Tata,Home Care,399
+2024-08-01,Tata,Personal Care,457
+2024-08-01,Tata,Snacks,360
+2024-08-01,Tata,Vegetables,394
+2024-09-01,Amul,Beverages,374
+2024-09-01,Amul,Dairy,408
+2024-09-01,Amul,Fruits,425
+2024-09-01,Amul,Grocery,403
+2024-09-01,Amul,Home Care,464
+2024-09-01,Amul,Personal Care,329
+2024-09-01,Amul,Snacks,334
+2024-09-01,Amul,Vegetables,359
+2024-09-01,Britannia,Beverages,364
+2024-09-01,Britannia,Dairy,415
+2024-09-01,Britannia,Fruits,479
+2024-09-01,Britannia,Grocery,438
+2024-09-01,Britannia,Home Care,408
+2024-09-01,Britannia,Personal Care,381
+2024-09-01,Britannia,Snacks,372
+2024-09-01,Britannia,Vegetables,427
+2024-09-01,HUL,Beverages,406
+2024-09-01,HUL,Dairy,332
+2024-09-01,HUL,Fruits,318
+2024-09-01,HUL,Grocery,353
+2024-09-01,HUL,Home Care,377
+2024-09-01,HUL,Personal Care,416
+2024-09-01,HUL,Snacks,434
+2024-09-01,HUL,Vegetables,349
+2024-09-01,ITC,Beverages,388
+2024-09-01,ITC,Dairy,370
+2024-09-01,ITC,Fruits,379
+2024-09-01,ITC,Grocery,367
+2024-09-01,ITC,Home Care,389
+2024-09-01,ITC,Personal Care,326
+2024-09-01,ITC,Snacks,421
+2024-09-01,ITC,Vegetables,395
+2024-09-01,Nestle,Beverages,363
+2024-09-01,Nestle,Dairy,408
+2024-09-01,Nestle,Fruits,478
+2024-09-01,Nestle,Grocery,344
+2024-09-01,Nestle,Home Care,432
+2024-09-01,Nestle,Personal Care,378
+2024-09-01,Nestle,Snacks,352
+2024-09-01,Nestle,Vegetables,321
+2024-09-01,Parle,Beverages,405
+2024-09-01,Parle,Dairy,404
+2024-09-01,Parle,Fruits,399
+2024-09-01,Parle,Grocery,334
+2024-09-01,Parle,Home Care,375
+2024-09-01,Parle,Personal Care,375
+2024-09-01,Parle,Snacks,345
+2024-09-01,Parle,Vegetables,395
+2024-09-01,PepsiCo,Beverages,427
+2024-09-01,PepsiCo,Dairy,390
+2024-09-01,PepsiCo,Fruits,444
+2024-09-01,PepsiCo,Grocery,357
+2024-09-01,PepsiCo,Home Care,378
+2024-09-01,PepsiCo,Personal Care,417
+2024-09-01,PepsiCo,Snacks,402
+2024-09-01,PepsiCo,Vegetables,459
+2024-09-01,Tata,Beverages,358
+2024-09-01,Tata,Dairy,335
+2024-09-01,Tata,Fruits,390
+2024-09-01,Tata,Grocery,448
+2024-09-01,Tata,Home Care,393
+2024-09-01,Tata,Personal Care,403
+2024-09-01,Tata,Snacks,393
+2024-09-01,Tata,Vegetables,366
+2024-10-01,Amul,Beverages,417
+2024-10-01,Amul,Dairy,378
+2024-10-01,Amul,Fruits,358
+2024-10-01,Amul,Grocery,437
+2024-10-01,Amul,Home Care,436
+2024-10-01,Amul,Personal Care,361
+2024-10-01,Amul,Snacks,415
+2024-10-01,Amul,Vegetables,477
+2024-10-01,Britannia,Beverages,423
+2024-10-01,Britannia,Dairy,418
+2024-10-01,Britannia,Fruits,437
+2024-10-01,Britannia,Grocery,341
+2024-10-01,Britannia,Home Care,409
+2024-10-01,Britannia,Personal Care,366
+2024-10-01,Britannia,Snacks,389
+2024-10-01,Britannia,Vegetables,484
+2024-10-01,HUL,Beverages,435
+2024-10-01,HUL,Dairy,423
+2024-10-01,HUL,Fruits,356
+2024-10-01,HUL,Grocery,272
+2024-10-01,HUL,Home Care,462
+2024-10-01,HUL,Personal Care,386
+2024-10-01,HUL,Snacks,360
+2024-10-01,HUL,Vegetables,430
+2024-10-01,ITC,Beverages,413
+2024-10-01,ITC,Dairy,375
+2024-10-01,ITC,Fruits,380
+2024-10-01,ITC,Grocery,338
+2024-10-01,ITC,Home Care,415
+2024-10-01,ITC,Personal Care,387
+2024-10-01,ITC,Snacks,406
+2024-10-01,ITC,Vegetables,405
+2024-10-01,Nestle,Beverages,456
+2024-10-01,Nestle,Dairy,336
+2024-10-01,Nestle,Fruits,422
+2024-10-01,Nestle,Grocery,381
+2024-10-01,Nestle,Home Care,390
+2024-10-01,Nestle,Personal Care,464
+2024-10-01,Nestle,Snacks,390
+2024-10-01,Nestle,Vegetables,432
+2024-10-01,Parle,Beverages,405
+2024-10-01,Parle,Dairy,418
+2024-10-01,Parle,Fruits,375
+2024-10-01,Parle,Grocery,358
+2024-10-01,Parle,Home Care,379
+2024-10-01,Parle,Personal Care,381
+2024-10-01,Parle,Snacks,378
+2024-10-01,Parle,Vegetables,360
+2024-10-01,PepsiCo,Beverages,462
+2024-10-01,PepsiCo,Dairy,326
+2024-10-01,PepsiCo,Fruits,398
+2024-10-01,PepsiCo,Grocery,387
+2024-10-01,PepsiCo,Home Care,448
+2024-10-01,PepsiCo,Personal Care,326
+2024-10-01,PepsiCo,Snacks,387
+2024-10-01,PepsiCo,Vegetables,435
+2024-10-01,Tata,Beverages,493
+2024-10-01,Tata,Dairy,394
+2024-10-01,Tata,Fruits,461
+2024-10-01,Tata,Grocery,420
+2024-10-01,Tata,Home Care,382
+2024-10-01,Tata,Personal Care,388
+2024-10-01,Tata,Snacks,388
+2024-10-01,Tata,Vegetables,408
+2024-11-01,Amul,Beverages,370
+2024-11-01,Amul,Dairy,452
+2024-11-01,Amul,Fruits,347
+2024-11-01,Amul,Grocery,331
+2024-11-01,Amul,Home Care,375
+2024-11-01,Amul,Personal Care,309
+2024-11-01,Amul,Snacks,405
+2024-11-01,Amul,Vegetables,354
+2024-11-01,Britannia,Beverages,381
+2024-11-01,Britannia,Dairy,381
+2024-11-01,Britannia,Fruits,377
+2024-11-01,Britannia,Grocery,358
+2024-11-01,Britannia,Home Care,437
+2024-11-01,Britannia,Personal Care,384
+2024-11-01,Britannia,Snacks,414
+2024-11-01,Britannia,Vegetables,367
+2024-11-01,HUL,Beverages,344
+2024-11-01,HUL,Dairy,405
+2024-11-01,HUL,Fruits,330
+2024-11-01,HUL,Grocery,427
+2024-11-01,HUL,Home Care,429
+2024-11-01,HUL,Personal Care,426
+2024-11-01,HUL,Snacks,364
+2024-11-01,HUL,Vegetables,396
+2024-11-01,ITC,Beverages,368
+2024-11-01,ITC,Dairy,325
+2024-11-01,ITC,Fruits,337
+2024-11-01,ITC,Grocery,357
+2024-11-01,ITC,Home Care,426
+2024-11-01,ITC,Personal Care,437
+2024-11-01,ITC,Snacks,547
+2024-11-01,ITC,Vegetables,350
+2024-11-01,Nestle,Beverages,327
+2024-11-01,Nestle,Dairy,418
+2024-11-01,Nestle,Fruits,406
+2024-11-01,Nestle,Grocery,386
+2024-11-01,Nestle,Home Care,380
+2024-11-01,Nestle,Personal Care,347
+2024-11-01,Nestle,Snacks,386
+2024-11-01,Nestle,Vegetables,362
+2024-11-01,Parle,Beverages,316
+2024-11-01,Parle,Dairy,351
+2024-11-01,Parle,Fruits,403
+2024-11-01,Parle,Grocery,366
+2024-11-01,Parle,Home Care,334
+2024-11-01,Parle,Personal Care,373
+2024-11-01,Parle,Snacks,359
+2024-11-01,Parle,Vegetables,412
+2024-11-01,PepsiCo,Beverages,367
+2024-11-01,PepsiCo,Dairy,348
+2024-11-01,PepsiCo,Fruits,375
+2024-11-01,PepsiCo,Grocery,396
+2024-11-01,PepsiCo,Home Care,375
+2024-11-01,PepsiCo,Personal Care,387
+2024-11-01,PepsiCo,Snacks,349
+2024-11-01,PepsiCo,Vegetables,396
+2024-11-01,Tata,Beverages,404
+2024-11-01,Tata,Dairy,366
+2024-11-01,Tata,Fruits,422
+2024-11-01,Tata,Grocery,372
+2024-11-01,Tata,Home Care,389
+2024-11-01,Tata,Personal Care,388
+2024-11-01,Tata,Snacks,388
+2024-11-01,Tata,Vegetables,380
+2024-12-01,Amul,Beverages,403
+2024-12-01,Amul,Dairy,413
+2024-12-01,Amul,Fruits,386
+2024-12-01,Amul,Grocery,415
+2024-12-01,Amul,Home Care,338
+2024-12-01,Amul,Personal Care,410
+2024-12-01,Amul,Snacks,400
+2024-12-01,Amul,Vegetables,338
+2024-12-01,Britannia,Beverages,419
+2024-12-01,Britannia,Dairy,382
+2024-12-01,Britannia,Fruits,461
+2024-12-01,Britannia,Grocery,412
+2024-12-01,Britannia,Home Care,350
+2024-12-01,Britannia,Personal Care,364
+2024-12-01,Britannia,Snacks,358
+2024-12-01,Britannia,Vegetables,341
+2024-12-01,HUL,Beverages,452
+2024-12-01,HUL,Dairy,395
+2024-12-01,HUL,Fruits,400
+2024-12-01,HUL,Grocery,406
+2024-12-01,HUL,Home Care,383
+2024-12-01,HUL,Personal Care,388
+2024-12-01,HUL,Snacks,391
+2024-12-01,HUL,Vegetables,397
+2024-12-01,ITC,Beverages,350
+2024-12-01,ITC,Dairy,337
+2024-12-01,ITC,Fruits,406
+2024-12-01,ITC,Grocery,451
+2024-12-01,ITC,Home Care,366
+2024-12-01,ITC,Personal Care,371
+2024-12-01,ITC,Snacks,400
+2024-12-01,ITC,Vegetables,399
+2024-12-01,Nestle,Beverages,369
+2024-12-01,Nestle,Dairy,367
+2024-12-01,Nestle,Fruits,389
+2024-12-01,Nestle,Grocery,327
+2024-12-01,Nestle,Home Care,343
+2024-12-01,Nestle,Personal Care,423
+2024-12-01,Nestle,Snacks,400
+2024-12-01,Nestle,Vegetables,321
+2024-12-01,Parle,Beverages,404
+2024-12-01,Parle,Dairy,414
+2024-12-01,Parle,Fruits,391
+2024-12-01,Parle,Grocery,353
+2024-12-01,Parle,Home Care,375
+2024-12-01,Parle,Personal Care,414
+2024-12-01,Parle,Snacks,353
+2024-12-01,Parle,Vegetables,384
+2024-12-01,PepsiCo,Beverages,381
+2024-12-01,PepsiCo,Dairy,425
+2024-12-01,PepsiCo,Fruits,390
+2024-12-01,PepsiCo,Grocery,474
+2024-12-01,PepsiCo,Home Care,419
+2024-12-01,PepsiCo,Personal Care,394
+2024-12-01,PepsiCo,Snacks,339
+2024-12-01,PepsiCo,Vegetables,358
+2024-12-01,Tata,Beverages,373
+2024-12-01,Tata,Dairy,388
+2024-12-01,Tata,Fruits,421
+2024-12-01,Tata,Grocery,336
+2024-12-01,Tata,Home Care,484
+2024-12-01,Tata,Personal Care,420
+2024-12-01,Tata,Snacks,350
+2024-12-01,Tata,Vegetables,310

@@ -1,0 +1,149 @@
+Product,Recommended_Product,Support,Confidence,Lift
+Dettol Hand Wash,Milk,0.051,65.38,1.3
+Olive Oil,Eggs,0.057,64.04,1.28
+Ashirvaad Whole Wheat Atta,Conditioner,0.05,60.24,1.25
+MTR Ready-to-Eat Poha,Rice,0.05,60.24,1.24
+Fresh Apples,Rice,0.062,60.19,1.24
+Organic Honey,Bread,0.053,63.86,1.23
+Saffron,Tomatoes,0.05,65.79,1.22
+Fortune Sunlite Refined Oil,Salt,0.054,61.36,1.21
+Fortune Sunlite Refined Oil,Capsicum,0.058,65.91,1.21
+Energy Drink,Eggs,0.05,60.24,1.2
+Dove Shampoo,Salt,0.051,60.71,1.2
+Pillow Cover,Salt,0.057,60.64,1.2
+Balaji Masala Masti Chips,Bread,0.054,62.07,1.2
+Colin Glass Cleaner,Conditioner,0.056,57.14,1.19
+Red Label Tea,Capsicum,0.055,63.95,1.17
+Vaseline Petroleum Jelly,Capsicum,0.062,63.92,1.17
+Fresh Apples,Conditioner,0.058,56.31,1.17
+Crystal Large Garbage Bag,Eggs,0.05,58.14,1.16
+Protein Powder,Rice,0.053,56.38,1.16
+Maggi Instant Noodles,Capsicum,0.055,63.22,1.16
+Ariel Liquid Detergent,Shampoo,0.052,56.52,1.16
+Himalaya Face Wash,Bread,0.06,59.41,1.14
+Everest Garam Masala,Tomatoes,0.05,61.73,1.14
+Spinach,Milk,0.053,57.61,1.14
+Pantene Conditioner,Milk,0.053,57.61,1.14
+Ariel Liquid Detergent,Salt,0.053,57.61,1.14
+Vaseline Petroleum Jelly,Eggs,0.055,56.7,1.13
+Himalaya Face Wash,Capsicum,0.062,61.39,1.13
+Ariel Liquid Detergent,Rice,0.05,54.35,1.12
+Bananas,Capsicum,0.051,60.71,1.11
+Tata Salt,Bread,0.056,57.73,1.11
+Ariel Liquid Detergent,Bread,0.053,57.61,1.11
+Vaseline Petroleum Jelly,Tomatoes,0.058,59.79,1.11
+Bedsheet Double Bed,Capsicum,0.056,60.22,1.1
+Ariel Liquid Detergent,Milk,0.051,55.43,1.1
+Crystal Large Garbage Bag,Tomatoes,0.051,59.3,1.1
+Spinach,Capsicum,0.055,59.78,1.1
+Fresh Apples,Shampoo,0.055,53.4,1.09
+Milk,Chicken,0.18,35.71,1.09
+Chicken,Milk,0.18,55.05,1.09
+Soap,Conditioner,0.165,52.55,1.09
+Conditioner,Soap,0.165,34.23,1.09
+Butter,Salt,0.188,55.13,1.09
+Salt,Butter,0.188,37.08,1.09
+Rice,Fish,0.185,38.07,1.08
+Fish,Rice,0.185,52.71,1.08
+Fresh Apples,Milk,0.056,54.37,1.08
+Carrots,Tomatoes,0.053,58.24,1.08
+Vaseline Petroleum Jelly,Shampoo,0.051,52.58,1.08
+Bedsheet Double Bed,Bread,0.052,55.91,1.08
+Shampoo,Juice,0.176,36.07,1.07
+Juice,Shampoo,0.176,52.38,1.07
+Pantene Conditioner,Salt,0.05,54.35,1.07
+Spinach,Salt,0.05,54.35,1.07
+Cheese,Shampoo,0.171,52.29,1.07
+Shampoo,Cheese,0.171,35.04,1.07
+Carrots,Capsicum,0.053,58.24,1.07
+Onions,Milk,0.05,53.76,1.07
+Cornflakes,Rice,0.185,51.82,1.07
+Rice,Cornflakes,0.185,38.07,1.07
+Fresh Apples,Eggs,0.055,53.4,1.07
+Balaji Masala Masti Chips,Tomatoes,0.05,57.47,1.06
+Protein Powder,Tomatoes,0.054,57.45,1.06
+Milk,Soap,0.168,33.33,1.06
+Soap,Milk,0.168,53.5,1.06
+Tata Salt,Rice,0.05,51.55,1.06
+Himalaya Face Wash,Rice,0.052,51.49,1.06
+Salt,Soap,0.168,33.14,1.06
+Soap,Salt,0.168,53.5,1.06
+Balaji Masala Masti Chips,Capsicum,0.05,57.47,1.05
+Vaseline Petroleum Jelly,Bread,0.053,54.64,1.05
+Juice,Salt,0.179,53.27,1.05
+Salt,Juice,0.179,35.31,1.05
+Soap,Capsicum,0.179,57.01,1.05
+Capsicum,Soap,0.179,32.84,1.05
+Pillow Cover,Bread,0.051,54.26,1.05
+Juice,Tomatoes,0.189,56.25,1.04
+Tomatoes,Juice,0.189,35.0,1.04
+Tata Salt,Capsicum,0.055,56.7,1.04
+Eggs,Toothpaste,0.186,37.13,1.04
+Toothpaste,Eggs,0.186,52.1,1.04
+Tomatoes,Fish,0.197,36.48,1.04
+Fish,Tomatoes,0.197,56.13,1.04
+Face Wash,Bread,0.174,53.87,1.04
+Bread,Face Wash,0.174,33.53,1.04
+Onions,Tomatoes,0.052,55.91,1.04
+Protein Powder,Capsicum,0.053,56.38,1.03
+Toothpaste,Milk,0.186,52.1,1.03
+Milk,Toothpaste,0.186,36.9,1.03
+Chicken,Capsicum,0.184,56.27,1.03
+Capsicum,Chicken,0.184,33.76,1.03
+Tata Salt,Tomatoes,0.054,55.67,1.03
+Butter,Eggs,0.176,51.61,1.03
+Eggs,Butter,0.176,35.13,1.03
+Colin Glass Cleaner,Capsicum,0.055,56.12,1.03
+Conditioner,Chicken,0.162,33.61,1.03
+Chicken,Conditioner,0.162,49.54,1.03
+Salt,Toothpaste,0.186,36.69,1.03
+Toothpaste,Salt,0.186,52.1,1.03
+Fish,Bread,0.187,53.28,1.03
+Bread,Fish,0.187,36.03,1.03
+Tomatoes,Butter,0.189,35.0,1.03
+Butter,Tomatoes,0.189,55.43,1.03
+Eggs,Face Wash,0.166,33.13,1.03
+Face Wash,Eggs,0.166,51.39,1.03
+Butter,Rice,0.17,49.85,1.03
+Rice,Butter,0.17,34.98,1.03
+Face Wash,Rice,0.161,49.85,1.03
+Rice,Face Wash,0.161,33.13,1.03
+Tomatoes,Chicken,0.181,33.52,1.03
+Chicken,Tomatoes,0.181,55.35,1.03
+Protein Powder,Bread,0.05,53.19,1.02
+Bread,Butter,0.181,34.87,1.02
+Butter,Bread,0.181,53.08,1.02
+Cornflakes,Shampoo,0.178,49.86,1.02
+Toothpaste,Shampoo,0.178,49.86,1.02
+Shampoo,Toothpaste,0.178,36.48,1.02
+Shampoo,Cornflakes,0.178,36.48,1.02
+Eggs,Cheese,0.167,33.33,1.02
+Eggs,Chicken,0.167,33.33,1.02
+Cheese,Eggs,0.167,51.07,1.02
+Chicken,Eggs,0.167,51.07,1.02
+Bedsheet Double Bed,Tomatoes,0.051,54.84,1.02
+Himalaya Face Wash,Salt,0.052,51.49,1.02
+Bread,Juice,0.177,34.1,1.02
+Juice,Bread,0.177,52.68,1.02
+Chicken,Bread,0.172,52.6,1.01
+Bread,Chicken,0.172,33.14,1.01
+Cheese,Salt,0.168,51.38,1.01
+Salt,Cheese,0.168,33.14,1.01
+Rice,Conditioner,0.237,48.77,1.01
+Conditioner,Rice,0.237,49.17,1.01
+Toothpaste,Tomatoes,0.195,54.62,1.01
+Tomatoes,Toothpaste,0.195,36.11,1.01
+Capsicum,Tomatoes,0.297,54.5,1.01
+Tomatoes,Capsicum,0.297,55.0,1.01
+Tomatoes,Face Wash,0.176,32.59,1.01
+Face Wash,Tomatoes,0.176,54.49,1.01
+Toothpaste,Capsicum,0.196,54.9,1.01
+Capsicum,Toothpaste,0.196,35.96,1.01
+Conditioner,Butter,0.165,34.23,1.0
+Butter,Conditioner,0.165,48.39,1.0
+Himalaya Face Wash,Milk,0.051,50.5,1.0
+Colin Glass Cleaner,Tomatoes,0.053,54.08,1.0
+Milk,Face Wash,0.163,32.34,1.0
+Face Wash,Milk,0.163,50.46,1.0
+Butter,Milk,0.172,50.44,1.0
+Milk,Butter,0.172,34.13,1.0
