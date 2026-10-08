@@ -16,41 +16,33 @@ The system allows users to upload retail datasets, analyze business performance,
 
 ## Key Features
 
-- **Home Dashboard**
-  - Retail KPIs
-  - Sales and revenue overview
-  - Inventory insights
-  - Business performance summary
+- **Overview Dashboard**
+  - Executive Retail KPIs (Revenue, Volume, Active Catalog, Restock Alerts)
+  - Monthly Sales Trend visualization
+  - Top Revenue Categories breakdown
+  - Direct alert hooks to reorder operations
 
-- **Needs Attention**
-  - Highlights products and inventory situations requiring attention
-  - Identifies restocking priorities
-
-- **Inventory Analysis**
-  - Stock-on-hand analysis
-  - Reorder-level monitoring
-  - Inventory classification using machine-learning models
-
-- **Restock Planner**
-  - Calculates required stock using average demand and lead time
-  - Provides Restock Now, Restock Soon, and Stock Sufficient recommendations
-  - Suggests order quantities
+- **Inventory & Restock Hub (Unified)**
+  - Real-time stock health tracking (*Healthy Stock*, *Low Stock*, *Overstocked*)
+  - Stock Health distribution charts
+  - **Immediate Reorders**: Automated purchase order generation for items at or below reorder threshold
+  - **Watchlist (Restock Soon)**: Lead-time demand forecasting for preventative replenishment
+  - **Catalog Health Status**: Comprehensive inventory catalog table with ML classifications
+  - **1-Click Purchase Order Export**: Instant CSV download for vendor orders
 
 - **Sales & Forecast**
-  - Revenue prediction using Linear Regression
-  - Sales-related trends and analytics
+  - Expected revenue predictions using trained Linear Regression
+  - Actual vs. Expected sales variance tracking
+  - Brand-level revenue forecasts and historical trends
 
-- **Product Combos**
-  - Association-rule mining using Apriori
-  - Product recommendation based on support, confidence, and lift
+- **Product Intelligence**
+  - **Cross-Sell Combos**: Market Basket analysis via Apriori algorithm with Support, Confidence, and Lift metrics
+  - **Customer & Product Segments**: Multi-dimensional behavior clustering powered by K-Means
 
-- **Product Groups**
-  - Product/customer behavior grouping using K-Means clustering
-
-- **Update Sales Data**
-  - Upload CSV/Excel datasets
-  - Automatic column normalization
-  - Dataset validation and preprocessing
+- **High-Performance Data Ingestion**
+  - Instant multi-file CSV and Excel upload and merge
+  - Robust regex-based column normalization (handles aliases like `qty`, `units_sold`, `cost`, etc.)
+  - Sub-second ML inference pipeline on 100,000+ records via vectorized NumPy engines and model caching
 
 ## Machine Learning
 

@@ -1,5 +1,5 @@
+import numpy as np
 import pandas as pd
-import math
 
 
 def calculate_restocking(df):
@@ -17,21 +17,15 @@ def calculate_restocking(df):
         df["Average_Demand"] * df["Lead_Time_Days"]
     )
 
-    def get_status(row):
+    # High-performance vectorized calculation
+    conditions = [
+        df["Stock_On_Hand"] <= df["Reorder_Level"],
+        df["Stock_On_Hand"] < df["Required_Stock"]
+    ]
+    choices = ["Restock Now", "Restock Soon"]
+    df["Restock_Status"] = np.select(conditions, choices, default="Stock Sufficient")
 
-        if row["Stock_On_Hand"] <= row["Reorder_Level"]:
-            return "Restock Now"
+    diff = df["Required_Stock"] - df["Stock_On_Hand"]
+    df["Suggested_Quantity"] = np.maximum(0, np.ceil(diff)).astype(int)
 
-        elif row["Stock_On_Hand"] < row["Required_Stock"]:
-            return "Restock Soon"
-
-        else:
-            return "Stock Sufficient"
-
-    df["Restock_Status"] = df.apply(get_status, axis=1)
-
-    df["Suggested_Quantity"] = (
-        df["Required_Stock"] - df["Stock_On_Hand"]
-    ).apply(lambda x: max(0, math.ceil(x)))
-
-    return df
+    return df

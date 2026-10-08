@@ -246,9 +246,14 @@ st.markdown(
 
 # ------------------------------------------------------------
 
+@st.cache_resource(show_spinner="Loading machine learning models...")
+def get_cached_models():
+    return load_models()
+
+
 try:
 
-    models = load_models()
+    models = get_cached_models()
 
     model_load_error = None
 
@@ -270,7 +275,7 @@ def init_state():
 
     defaults = {
 
-        "page": "Home",
+        "page": "Overview",
 
         "cumulative_raw_df": None,
 
@@ -416,7 +421,7 @@ def run_models(df):
 
 
 
-    if models is None:
+    if not models:
 
         return processed, support
 
@@ -501,21 +506,10 @@ with st.sidebar:
     st.markdown('<div class="menu-label">BUSINESS</div>', unsafe_allow_html=True)
 
     pages = [
-
-        "Home",
-
-        "Needs Attention",
-
-        "Inventory",
-
-        "Restock Planner",
-
+        "Overview",
+        "Inventory & Restock",
         "Sales & Forecast",
-
-        "Product Combos",
-
-        "Product Groups",
-
+        "Product Intelligence",
     ]
 
     for label in pages:
@@ -832,11 +826,11 @@ if st.session_state.page == "Update Sales Data":
 
 # ------------------------------------------------------------
 
-# HOME
+# OVERVIEW
 
 # ------------------------------------------------------------
 
-elif st.session_state.page == "Home":
+elif st.session_state.page in ["Overview", "Home"]:
 
     if st.session_state.display_df is None:
 
@@ -943,180 +937,81 @@ elif st.session_state.page == "Home":
 
 
 # ------------------------------------------------------------
-
-# NEEDS ATTENTION
-
+# INVENTORY & RESTOCK (UNIFIED HUB)
 # ------------------------------------------------------------
-
-elif st.session_state.page == "Needs Attention":
-
+elif st.session_state.page in ["Inventory & Restock", "Inventory", "Restock Planner", "Needs Attention"]:
     df = require_data()
-
-    page_header("Needs Attention", "Products and inventory situations that need action first.")
-
-
-
-    if "Restock_Status" not in df.columns:
-
-        st.info("Restocking recommendations are not available for this dataset.")
-
-        st.stop()
-
-
-
-    restock_now = df[df["Restock_Status"] == "Restock Now"].copy()
-
-    restock_soon = df[df["Restock_Status"] == "Restock Soon"].copy()
-
-    c1, c2, c3 = st.columns(3)
-
-    c1.metric("RESTOCK NOW", f"{len(restock_now):,}")
-
-    c2.metric("RESTOCK SOON", f"{len(restock_soon):,}")
-
-    c3.metric("TOTAL TO WATCH", f"{len(restock_now) + len(restock_soon):,}")
-
-
-
-    if not restock_now.empty:
-
-        st.markdown('<div class="page-title">Restock Now</div>', unsafe_allow_html=True)
-
-        cols = unique_columns([c for c in [get_product_column(df), "Brand", "Category", "Stock_On_Hand", "Reorder_Level", "Suggested_Order_Quantity"] if c and c in restock_now.columns])
-
-        st.dataframe(restock_now[cols].head(50), use_container_width=True, hide_index=True)
-
-
-
-    if not restock_soon.empty:
-
-        st.markdown('<div class="page-title">Restock Soon</div>', unsafe_allow_html=True)
-
-        cols = unique_columns([c for c in [get_product_column(df), "Brand", "Category", "Stock_On_Hand", "Reorder_Level", "Suggested_Order_Quantity"] if c and c in restock_soon.columns])
-
-        st.dataframe(restock_soon[cols].head(50), use_container_width=True, hide_index=True)
-
-
-
-    if restock_now.empty and restock_soon.empty:
-
-        st.markdown('<div class="success-box"><b>No urgent actions.</b> Inventory is currently in a stable position.</div>', unsafe_allow_html=True)
-
-
-
-# ------------------------------------------------------------
-
-# INVENTORY
-
-# ------------------------------------------------------------
-
-elif st.session_state.page == "Inventory":
-
-    df = require_data()
-
-    page_header("Inventory", "Understand which products are healthy, running low or overstocked.")
-
-
-
-    prediction_col = "Random_Forest_Prediction" if "Random_Forest_Prediction" in df.columns else ("KNN_Prediction" if "KNN_Prediction" in df.columns else None)
-
-    if prediction_col is None:
-
-        st.info("Inventory health classification is not available for this dataset.")
-
-        st.stop()
-
-
-
-    health = df[prediction_col].value_counts().reindex(["Healthy Stock", "Low Stock", "Overstocked"], fill_value=0)
-
-    c1, c2, c3 = st.columns(3)
-
-    c1.metric("STOCK OK", f"{health['Healthy Stock']:,}")
-
-    c2.metric("RUNNING LOW", f"{health['Low Stock']:,}")
-
-    c3.metric("OVERSTOCKED", f"{health['Overstocked']:,}")
-
-
-
-    st.markdown('<div class="page-title">Stock Health</div>', unsafe_allow_html=True)
-
-    st.bar_chart(health, height=300)
-
-
-
-    st.markdown('<div class="page-title">Product Inventory Status</div>', unsafe_allow_html=True)
-
-    cols = unique_columns([c for c in [get_product_column(df), "Brand", "Category", "Stock_On_Hand", "Reorder_Level", prediction_col] if c and c in df.columns])
-
-    st.dataframe(df[cols].head(100), use_container_width=True, hide_index=True)
-
-
-
-# ------------------------------------------------------------
-
-# RESTOCK PLANNER
-
-# ------------------------------------------------------------
-
-elif st.session_state.page == "Restock Planner":
-
-    df = require_data()
-
-    page_header("Restock Planner", "A practical list of products that should be ordered.")
-
-
-
-    if "Restock_Status" not in df.columns:
-
-        st.info("Restocking recommendations are not available for this dataset.")
-
-        st.stop()
-
-
-
-    restock_now = df[df["Restock_Status"] == "Restock Now"].copy()
-
-    restock_soon = df[df["Restock_Status"] == "Restock Soon"].copy()
-
-    total_units = restock_now["Suggested_Order_Quantity"].fillna(0).sum() if "Suggested_Order_Quantity" in restock_now.columns else 0
-
-
-
-    c1, c2, c3 = st.columns(3)
-
-    c1.metric("ORDER NOW", f"{len(restock_now):,}")
-
-    c2.metric("ORDER SOON", f"{len(restock_soon):,}")
-
-    c3.metric("SUGGESTED UNITS", f"{total_units:,.0f}")
-
-
-
-    if not restock_now.empty:
-
-        st.markdown('<div class="page-title">Order List</div>', unsafe_allow_html=True)
-
-        cols = unique_columns([c for c in [get_product_column(df), "Brand", "Category", "Stock_On_Hand", "Reorder_Level", "Suggested_Order_Quantity"] if c and c in restock_now.columns])
-
-        table = restock_now[cols].copy().rename(columns={"Stock_On_Hand": "Current Stock", "Reorder_Level": "Reorder Level", "Suggested_Order_Quantity": "Suggested Order"})
-
-        st.dataframe(table, use_container_width=True, hide_index=True)
-
-    else:
-
-        st.markdown('<div class="success-box"><b>No products need immediate restocking.</b></div>', unsafe_allow_html=True)
-
-
-
-    if not restock_soon.empty:
-
-        st.markdown('<div class="page-title">Plan Ahead</div>', unsafe_allow_html=True)
-
-        cols = unique_columns([c for c in [get_product_column(df), "Brand", "Category", "Stock_On_Hand", "Suggested_Order_Quantity"] if c and c in restock_soon.columns])
-
-        st.dataframe(restock_soon[cols].head(50), use_container_width=True, hide_index=True)
+    page_header("Inventory & Restock", "Unified stock health tracking, inventory classification, and purchase order planning.")
+
+    prediction_col = (
+        "Random_Forest_Prediction"
+        if "Random_Forest_Prediction" in df.columns
+        else ("Decision_Tree_Prediction" if "Decision_Tree_Prediction" in df.columns else ("KNN_Prediction" if "KNN_Prediction" in df.columns else None))
+    )
+
+    total_records = len(df)
+    restock_now_df = df[df["Restock_Status"] == "Restock Now"].copy() if "Restock_Status" in df.columns else pd.DataFrame()
+    restock_soon_df = df[df["Restock_Status"] == "Restock Soon"].copy() if "Restock_Status" in df.columns else pd.DataFrame()
+
+    healthy_count = (df[prediction_col] == "Healthy Stock").sum() if prediction_col else max(0, total_records - len(restock_now_df) - len(restock_soon_df))
+    suggested_units = restock_now_df["Suggested_Order_Quantity"].fillna(0).sum() if not restock_now_df.empty and "Suggested_Order_Quantity" in restock_now_df.columns else 0
+
+    c1, c2, c3, c4 = st.columns(4)
+    c1.metric("HEALTHY STOCK", f"{healthy_count:,}")
+    c2.metric("LOW / WATCHLIST", f"{len(restock_soon_df):,}")
+    c3.metric("REORDER NOW", f"{len(restock_now_df):,}")
+    c4.metric("UNITS TO ORDER", f"{suggested_units:,.0f}")
+
+    if prediction_col:
+        health_series = df[prediction_col].value_counts().reindex(["Healthy Stock", "Low Stock", "Overstocked"], fill_value=0)
+        st.markdown('<div class="page-title">Stock Health Breakdown</div>', unsafe_allow_html=True)
+        st.bar_chart(health_series, height=260)
+
+    st.markdown('<div class="page-title">Operational Reorder Hub</div>', unsafe_allow_html=True)
+    tab1, tab2, tab3 = st.tabs(["🚨 Immediate Reorders", "⚠️ Watchlist (Restock Soon)", "📦 Catalog Stock Status"])
+
+    with tab1:
+        if not restock_now_df.empty:
+            st.markdown(
+                f'<div class="danger-box"><b>{len(restock_now_df):,} items require immediate purchase orders.</b> Stock is at or below the minimum reorder threshold.</div>',
+                unsafe_allow_html=True,
+            )
+            cols = unique_columns([c for c in [get_product_column(df), "Brand", "Category", "Stock_On_Hand", "Reorder_Level", "Lead_Time_Days", "Suggested_Order_Quantity"] if c and c in restock_now_df.columns])
+            order_table = restock_now_df[cols].copy().rename(columns={"Stock_On_Hand": "Current Stock", "Reorder_Level": "Reorder Level", "Suggested_Order_Quantity": "Suggested Order", "Lead_Time_Days": "Lead Time (Days)"})
+
+            if len(order_table) > 100:
+                st.caption(f"Showing top 100 of {len(order_table):,} urgent reorder items:")
+                st.dataframe(order_table.head(100), use_container_width=True, hide_index=True)
+            else:
+                st.dataframe(order_table, use_container_width=True, hide_index=True)
+
+            csv_bytes = order_table.to_csv(index=False).encode("utf-8")
+            st.download_button(
+                label="📥 Download Purchase Order (CSV)",
+                data=csv_bytes,
+                file_name="retailiq_purchase_orders.csv",
+                mime="text/csv",
+                key="download_urgent_reorders",
+            )
+        else:
+            st.markdown('<div class="success-box"><b>All stock levels sufficient.</b> No immediate purchase orders required today.</div>', unsafe_allow_html=True)
+
+    with tab2:
+        if not restock_soon_df.empty:
+            st.markdown(
+                f'<div class="warning-box"><b>{len(restock_soon_df):,} items are running low.</b> Current inventory is below expected lead-time demand.</div>',
+                unsafe_allow_html=True,
+            )
+            cols = unique_columns([c for c in [get_product_column(df), "Brand", "Category", "Stock_On_Hand", "Lead_Time_Days", "Suggested_Order_Quantity"] if c and c in restock_soon_df.columns])
+            watchlist_table = restock_soon_df[cols].copy().rename(columns={"Stock_On_Hand": "Current Stock", "Suggested_Order_Quantity": "Suggested Order", "Lead_Time_Days": "Lead Time (Days)"})
+            st.dataframe(watchlist_table.head(100), use_container_width=True, hide_index=True)
+        else:
+            st.markdown('<div class="success-box"><b>No items on watchlist.</b> Upcoming demand is covered by current stock.</div>', unsafe_allow_html=True)
+
+    with tab3:
+        st.markdown('<div class="page-title">Catalog Inventory Status</div>', unsafe_allow_html=True)
+        catalog_cols = unique_columns([c for c in [get_product_column(df), "Brand", "Category", "Stock_On_Hand", "Reorder_Level", prediction_col, "Restock_Status"] if c and c in df.columns])
+        st.dataframe(df[catalog_cols].head(100), use_container_width=True, hide_index=True)
 
 
 
@@ -1191,92 +1086,65 @@ elif st.session_state.page == "Sales & Forecast":
 
 
 # ------------------------------------------------------------
-# PRODUCT COMBOS
+# PRODUCT INTELLIGENCE (COMBOS & SEGMENTATION)
 # ------------------------------------------------------------
-
-elif st.session_state.page == "Product Combos":
+elif st.session_state.page in ["Product Intelligence", "Product Combos", "Product Groups"]:
     df = require_data()
-    page_header("Product Combos", "Find products that are commonly associated with each other.")
+    page_header("Product Intelligence", "Cross-sell association recommendations and algorithmic product segmentation.")
 
-    # The main retail dataset is not used as the basket source because it
-    # does not contain reliable multi-product transaction information.
-    # A separate realistic transaction sample is generated for this module.
-    apriori_rules = build_sample_transaction_rules()
+    p_tab1, p_tab2 = st.tabs(["🛒 Cross-Sell Combos (Market Basket)", "👥 Product & Customer Segments (K-Means)"])
 
-    if apriori_rules.empty:
-        st.info("No strong product combinations were found in the transaction sample.")
-        st.stop()
+    with p_tab1:
+        using_real_rules = False
+        if models and "apriori" in models and not models["apriori"].empty:
+            apriori_rules = models["apriori"]
+            using_real_rules = True
+        else:
+            apriori_rules = build_sample_transaction_rules()
 
-    products = sorted(apriori_rules["Product"].dropna().astype(str).unique().tolist())
-    selected_product = st.selectbox("Select a product", products)
-    associations = get_associations(selected_product, apriori_rules, min_lift=1.0)
+        if apriori_rules.empty:
+            st.info("No strong product combinations were found.")
+        else:
+            products = sorted(apriori_rules["Product"].dropna().astype(str).unique().tolist())
+            selected_product = st.selectbox("Select a product to view frequently bought together items", products, key="pi_combo_select")
+            associations = get_associations(selected_product, apriori_rules, min_lift=1.0)
 
-    if associations is None or len(associations) == 0:
-        st.info("No strong product combinations were found for this product.")
-    else:
-        st.markdown(
-            f'<div class="success-box"><b>Recommended combinations for {selected_product}</b><br>'
-            'These recommendations are generated from a separate transaction-level sample using association-rule analysis.</div>',
-            unsafe_allow_html=True,
-        )
-        st.dataframe(associations, use_container_width=True, hide_index=True)
+            if associations is None or len(associations) == 0:
+                st.info("No strong product combinations were found for this product.")
+            else:
+                source_label = (
+                    "pre-trained association rules from transaction data"
+                    if using_real_rules
+                    else "a generated market basket pattern"
+                )
+                st.markdown(
+                    f'<div class="success-box"><b>Recommended combinations for {selected_product}</b><br>'
+                    f'These recommendations are based on {source_label} using association-rule analysis (Lift > 1.0).</div>',
+                    unsafe_allow_html=True,
+                )
+                st.dataframe(associations, use_container_width=True, hide_index=True)
 
+    with p_tab2:
+        cluster_col = "KMeans_Cluster" if "KMeans_Cluster" in df.columns else ("Cluster" if "Cluster" in df.columns else None)
+        if cluster_col is None:
+            st.info("Product grouping is not available for this dataset.")
+        else:
+            group_counts = df[cluster_col].value_counts().sort_index()
+            c1, c2 = st.columns(2)
+            c1.metric("PRODUCT GROUPS", f"{df[cluster_col].nunique():,}")
+            c2.metric("PRODUCT RECORDS", f"{len(df):,}")
 
-# ------------------------------------------------------------
-# PRODUCT GROUPS
+            st.markdown('<div class="page-title">Products in Each Group</div>', unsafe_allow_html=True)
+            st.bar_chart(group_counts, height=280)
 
-# ------------------------------------------------------------
+            if "Revenue" in df.columns:
+                st.markdown('<div class="page-title">Sales by Product Group</div>', unsafe_allow_html=True)
+                group_revenue = df.groupby(cluster_col)["Revenue"].sum().sort_values(ascending=False)
+                st.bar_chart(group_revenue, height=280)
 
-elif st.session_state.page == "Product Groups":
-
-    df = require_data()
-
-    page_header("Product Groups", "See groups of products with similar business behaviour.")
-
-
-
-    cluster_col = "KMeans_Cluster" if "KMeans_Cluster" in df.columns else ("Cluster" if "Cluster" in df.columns else None)
-
-    if cluster_col is None:
-
-        st.info("Product grouping is not available for this dataset.")
-
-        st.stop()
-
-
-
-    group_counts = df[cluster_col].value_counts().sort_index()
-
-    c1, c2 = st.columns(2)
-
-    c1.metric("PRODUCT GROUPS", f"{df[cluster_col].nunique():,}")
-
-    c2.metric("PRODUCT RECORDS", f"{len(df):,}")
-
-
-
-    st.markdown('<div class="page-title">Products in Each Group</div>', unsafe_allow_html=True)
-
-    st.bar_chart(group_counts, height=300)
-
-
-
-    if "Revenue" in df.columns:
-
-        st.markdown('<div class="page-title">Sales by Product Group</div>', unsafe_allow_html=True)
-
-        group_revenue = df.groupby(cluster_col)["Revenue"].sum().sort_values(ascending=False)
-
-        st.bar_chart(group_revenue, height=300)
-
-
-
-    st.markdown('<div class="page-title">Group Details</div>', unsafe_allow_html=True)
-
-    summary = df.groupby(cluster_col).size().reset_index(name="Records")
-
-    if "Revenue" in df.columns:
-
-        summary = summary.merge(df.groupby(cluster_col)["Revenue"].sum().reset_index(name="Revenue"), on=cluster_col, how="left")
-
-    st.dataframe(summary, use_container_width=True, hide_index=True)
+            st.markdown('<div class="page-title">Group Summary Details</div>', unsafe_allow_html=True)
+            summary = df.groupby(cluster_col).size().reset_index(name="Records")
+            if "Revenue" in df.columns:
+                summary = summary.merge(df.groupby(cluster_col)["Revenue"].sum().reset_index(name="Total Revenue"), on=cluster_col, how="left")
+                summary["Revenue Share %"] = (summary["Total Revenue"] / summary["Total Revenue"].sum() * 100).round(1)
+            st.dataframe(summary, use_container_width=True, hide_index=True)

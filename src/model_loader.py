@@ -5,40 +5,46 @@ def load_models():
 
     models = {}
 
-    models["regression"] = joblib.load(
-        "models/regression/linear_regression.pkl"
-    )
+    model_files = {
 
-    models["kmeans"] = joblib.load(
-        "models/clustering/kmeans.pkl"
-    )
+        "regression":
+            "models/regression/linear_regression.pkl",
 
-    models["clustering_scaler"] = joblib.load(
-        "models/clustering/scaler.pkl"
-    )
+        "kmeans":
+            "models/clustering/kmeans.pkl",
 
-    models["knn"] = joblib.load(
-        "models/classification/tuned/knn.pkl"
-    )
+        "clustering_scaler":
+            "models/clustering/scaler.pkl",
 
-    models["decision_tree"] = joblib.load(
-        "models/classification/tuned/decision_tree.pkl"
-    )
+        "knn":
+            "models/classification/tuned/knn.pkl",
 
-    models["svm"] = joblib.load(
-        "models/classification/tuned/svm.pkl"
-    )
+        "decision_tree":
+            "models/classification/tuned/decision_tree.pkl",
 
-    models["random_forest"] = joblib.load(
-        "models/classification/tuned/random_forest.pkl"
-    )
+        "svm":
+            "models/classification/tuned/svm.pkl",
 
-    models["classification_scaler"] = joblib.load(
-        "models/classification/tuned/scaler.pkl"
-    )
+        "random_forest":
+            "models/classification/tuned/random_forest.pkl",
 
-    models["apriori"] = joblib.load(
-        "models/association/apriori_rules.pkl"
-    )
+        "classification_scaler":
+            "models/classification/tuned/scaler.pkl",
+
+        "apriori":
+            "models/association/apriori_rules.pkl",
+
+    }
+
+    for name, path in model_files.items():
+
+        try:
+            models[name] = joblib.load(path)
+
+        except FileNotFoundError:
+            # Model file missing — skip it.
+            # The rest of the application will check
+            # for the key before using the model.
+            pass
 
     return models
