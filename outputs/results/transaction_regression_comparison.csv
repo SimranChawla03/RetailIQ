@@ -1,0 +1,5 @@
+Model,MAE,RMSE,WAPE,R2
+Random Forest,10.22,13.64,0.0258,0.9979
+Lasso Regression,72.22,99.09,0.1826,0.8899
+Ridge Regression,72.23,99.09,0.1826,0.8899
+Linear Regression,72.23,99.09,0.1826,0.8899

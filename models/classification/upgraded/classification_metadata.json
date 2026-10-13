@@ -1,0 +1,130 @@
+{
+  "target": "Demand_Level",
+  "classes": [
+    "Low",
+    "Medium",
+    "High"
+  ],
+  "thresholds": {
+    "Low_upper": 796.252,
+    "Medium_upper": 841.0
+  },
+  "champion_model": "Random Forest",
+  "feature_cols": [
+    "Lag_1_Units",
+    "Lag_7_Units",
+    "Rolling_7_Units",
+    "Rolling_14_Units",
+    "Day_of_Week",
+    "Month",
+    "Is_Weekend"
+  ],
+  "train_period": [
+    "2024-01-15",
+    "2024-09-15"
+  ],
+  "test_period": [
+    "2024-09-16",
+    "2024-12-30"
+  ],
+  "confusion_matrices": {
+    "Logistic Regression": [
+      [
+        12,
+        10,
+        8
+      ],
+      [
+        16,
+        11,
+        15
+      ],
+      [
+        15,
+        8,
+        11
+      ]
+    ],
+    "Decision Tree": [
+      [
+        17,
+        3,
+        10
+      ],
+      [
+        28,
+        4,
+        10
+      ],
+      [
+        26,
+        0,
+        8
+      ]
+    ],
+    "Random Forest": [
+      [
+        5,
+        14,
+        11
+      ],
+      [
+        8,
+        17,
+        17
+      ],
+      [
+        12,
+        8,
+        14
+      ]
+    ],
+    "Gradient Boosting": [
+      [
+        5,
+        9,
+        16
+      ],
+      [
+        10,
+        18,
+        14
+      ],
+      [
+        10,
+        12,
+        12
+      ]
+    ]
+  },
+  "metrics": [
+    {
+      "Model": "Random Forest",
+      "Accuracy": 0.3396,
+      "Precision (Macro)": 0.3231,
+      "Recall (Macro)": 0.3277,
+      "F1 (Macro)": 0.3233
+    },
+    {
+      "Model": "Logistic Regression",
+      "Accuracy": 0.3208,
+      "Precision (Macro)": 0.3273,
+      "Recall (Macro)": 0.3285,
+      "F1 (Macro)": 0.3207
+    },
+    {
+      "Model": "Gradient Boosting",
+      "Accuracy": 0.3302,
+      "Precision (Macro)": 0.3158,
+      "Recall (Macro)": 0.3161,
+      "F1 (Macro)": 0.314
+    },
+    {
+      "Model": "Decision Tree",
+      "Accuracy": 0.2736,
+      "Precision (Macro)": 0.3655,
+      "Recall (Macro)": 0.2991,
+      "F1 (Macro)": 0.2527
+    }
+  ]
+}

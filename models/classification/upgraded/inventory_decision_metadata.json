@@ -1,0 +1,110 @@
+{
+  "task": "Inventory Replenishment Decision Support Agreement",
+  "classes": [
+    "Stock Safe",
+    "Restock Required"
+  ],
+  "class_distribution": {
+    "Stock Safe": 98271,
+    "Restock Required": 1729
+  },
+  "test_distribution": {
+    "Stock Safe": 19654,
+    "Restock Required": 346
+  },
+  "confusion_matrices": {
+    "Logistic Regression": [
+      [
+        19421,
+        233
+      ],
+      [
+        0,
+        346
+      ]
+    ],
+    "Decision Tree": [
+      [
+        19421,
+        233
+      ],
+      [
+        0,
+        346
+      ]
+    ],
+    "Random Forest": [
+      [
+        19465,
+        189
+      ],
+      [
+        0,
+        346
+      ]
+    ],
+    "Gradient Boosting": [
+      [
+        19650,
+        4
+      ],
+      [
+        4,
+        342
+      ]
+    ]
+  },
+  "metrics": [
+    {
+      "Model": "Gradient Boosting",
+      "Accuracy": 0.9996,
+      "Balanced Accuracy": 0.9941,
+      "Precision (At-Risk)": 0.9884,
+      "Recall (At-Risk)": 0.9884,
+      "F1 (At-Risk)": 0.9884,
+      "F1 (Macro)": 0.9941,
+      "F1 (Weighted)": 0.9996
+    },
+    {
+      "Model": "Random Forest",
+      "Accuracy": 0.9906,
+      "Balanced Accuracy": 0.9952,
+      "Precision (At-Risk)": 0.6467,
+      "Recall (At-Risk)": 1.0,
+      "F1 (At-Risk)": 0.7855,
+      "F1 (Macro)": 0.8903,
+      "F1 (Weighted)": 0.9915
+    },
+    {
+      "Model": "Decision Tree",
+      "Accuracy": 0.9883,
+      "Balanced Accuracy": 0.9941,
+      "Precision (At-Risk)": 0.5976,
+      "Recall (At-Risk)": 1.0,
+      "F1 (At-Risk)": 0.7481,
+      "F1 (Macro)": 0.8711,
+      "F1 (Weighted)": 0.9898
+    },
+    {
+      "Model": "Logistic Regression",
+      "Accuracy": 0.9883,
+      "Balanced Accuracy": 0.9941,
+      "Precision (At-Risk)": 0.5976,
+      "Recall (At-Risk)": 1.0,
+      "F1 (At-Risk)": 0.7481,
+      "F1 (Macro)": 0.8711,
+      "F1 (Weighted)": 0.9898
+    },
+    {
+      "Model": "Majority Baseline (All Safe)",
+      "Accuracy": 0.9827,
+      "Balanced Accuracy": 0.5,
+      "Precision (At-Risk)": 0.0,
+      "Recall (At-Risk)": 0.0,
+      "F1 (At-Risk)": 0.0,
+      "F1 (Macro)": 0.4956,
+      "F1 (Weighted)": 0.9741
+    }
+  ],
+  "disclosure": "The dataset contains independently generated transaction attributes rather than a persistent warehouse ledger or observed physical stockout events. Model performance measures agreement with the documented replenishment safety stock rule (Stock_On_Hand <= Reorder_Level) across complex feature spaces."
+}

@@ -1,0 +1,6 @@
+Model,MAE,RMSE,WAPE,R2
+Random Forest,6770.79,8523.28,0.0636,-0.129
+Ridge Regression,6971.39,8736.05,0.0655,-0.186
+Linear Regression,7091.69,8856.05,0.0666,-0.2189
+Gradient Boosting,7515.52,9235.41,0.0706,-0.3255
+Seasonal Naive (7-Day Lag),10424.71,12552.19,0.0979,-1.4486

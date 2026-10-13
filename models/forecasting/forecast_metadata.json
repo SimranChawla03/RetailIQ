@@ -1,0 +1,41 @@
+{
+  "target": "Revenue",
+  "champion_model": "Random Forest",
+  "feature_cols": [
+    "Lag_1_Revenue",
+    "Lag_2_Revenue",
+    "Lag_7_Revenue",
+    "Lag_14_Revenue",
+    "Lag_1_Units",
+    "Lag_2_Units",
+    "Lag_7_Units",
+    "Lag_14_Units",
+    "Roll_7_Revenue_Mean",
+    "Roll_14_Revenue_Mean",
+    "Roll_7_Revenue_Std",
+    "Day_of_Week",
+    "Month",
+    "Day_of_Month",
+    "Is_Weekend"
+  ],
+  "train_period": [
+    "2024-01-15",
+    "2024-09-15"
+  ],
+  "val_period": [
+    "2024-09-16",
+    "2024-11-07"
+  ],
+  "test_period": [
+    "2024-11-08",
+    "2024-12-30"
+  ],
+  "test_size": 53,
+  "metrics": {
+    "Model": "Random Forest",
+    "MAE": 6770.79,
+    "RMSE": 8523.28,
+    "WAPE": 0.0636,
+    "R2": -0.129
+  }
+}

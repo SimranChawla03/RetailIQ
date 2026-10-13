@@ -1,0 +1,141 @@
+{
+  "task": "Chronological Daily Demand Trend",
+  "classes": [
+    "Decreasing",
+    "Stable",
+    "Increasing"
+  ],
+  "train_samples": 244,
+  "test_samples": 106,
+  "train_period": [
+    "2024-01-15",
+    "2024-09-14"
+  ],
+  "test_period": [
+    "2024-09-15",
+    "2024-12-29"
+  ],
+  "test_distribution": {
+    "Increasing": 38,
+    "Stable": 34,
+    "Decreasing": 34
+  },
+  "confusion_matrices": {
+    "Logistic Regression": [
+      [
+        12,
+        21,
+        1
+      ],
+      [
+        10,
+        23,
+        1
+      ],
+      [
+        4,
+        32,
+        2
+      ]
+    ],
+    "Decision Tree": [
+      [
+        16,
+        4,
+        14
+      ],
+      [
+        11,
+        5,
+        18
+      ],
+      [
+        7,
+        6,
+        25
+      ]
+    ],
+    "Random Forest": [
+      [
+        12,
+        11,
+        11
+      ],
+      [
+        14,
+        11,
+        9
+      ],
+      [
+        6,
+        16,
+        16
+      ]
+    ],
+    "Gradient Boosting": [
+      [
+        8,
+        16,
+        10
+      ],
+      [
+        9,
+        13,
+        12
+      ],
+      [
+        3,
+        19,
+        16
+      ]
+    ]
+  },
+  "metrics": [
+    {
+      "Model": "Decision Tree",
+      "Accuracy": 0.434,
+      "Balanced Accuracy": 0.4252,
+      "Precision (Macro)": 0.4142,
+      "Recall (Macro)": 0.4252,
+      "F1 (Macro)": 0.4003,
+      "F1 (Weighted)": 0.4051
+    },
+    {
+      "Model": "Random Forest",
+      "Accuracy": 0.3679,
+      "Balanced Accuracy": 0.3658,
+      "Precision (Macro)": 0.3696,
+      "Recall (Macro)": 0.3658,
+      "F1 (Macro)": 0.3672,
+      "F1 (Weighted)": 0.3697
+    },
+    {
+      "Model": "Gradient Boosting",
+      "Accuracy": 0.3491,
+      "Balanced Accuracy": 0.3462,
+      "Precision (Macro)": 0.364,
+      "Recall (Macro)": 0.3462,
+      "F1 (Macro)": 0.3448,
+      "F1 (Weighted)": 0.3477
+    },
+    {
+      "Model": "Logistic Regression",
+      "Accuracy": 0.3491,
+      "Balanced Accuracy": 0.3607,
+      "Precision (Macro)": 0.4214,
+      "Recall (Macro)": 0.3607,
+      "F1 (Macro)": 0.3045,
+      "F1 (Weighted)": 0.2966
+    },
+    {
+      "Model": "Majority Baseline (Stable)",
+      "Accuracy": 0.3208,
+      "Balanced Accuracy": 0.3333,
+      "Precision (Macro)": 0.1069,
+      "Recall (Macro)": 0.3333,
+      "F1 (Macro)": 0.1619,
+      "F1 (Weighted)": 0.1558
+    }
+  ],
+  "disclaimer": "Evaluated with strict chronological separation without future leakage. Since daily demand fluctuates with weak autocorrelation in this dataset, performance reflects genuine machine learning capabilities without data contamination."
+}

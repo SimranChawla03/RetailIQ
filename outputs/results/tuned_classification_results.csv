@@ -1,0 +1,5 @@
+Model,Stage,Accuracy,Precision,Recall,F1 Score
+KNN,Tuned,0.43495,0.33624,0.33451,0.31436
+Decision Tree,Tuned,0.4992,0.32172,0.33334,0.22642
+SVM,Tuned,0.50085,0.16695,0.33333,0.22247
+Random Forest,Tuned,0.46515,0.34181,0.33671,0.29285
